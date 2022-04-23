@@ -1,0 +1,15 @@
+﻿@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #song {
+        animation: marquee 15s linear infinite;
+    }
+}
